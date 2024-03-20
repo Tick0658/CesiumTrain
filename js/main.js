@@ -14,10 +14,8 @@ function Init() {
 
 viewer = Init();
 
-
-
 const scene = viewer.scene;
-//viewer.dataSources.add(Cesium.CzmlDataSource.load(czml));
+
 viewer.entities.add({
   id: "Tokyo",
   position: Cesium.Cartesian3.fromDegrees(136.881637, 35.170694),
