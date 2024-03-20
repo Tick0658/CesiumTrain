@@ -1,7 +1,7 @@
 const viewer = new Cesium.Viewer("cesiumContainer", {
   baseLayer: Cesium.ImageryLayer.fromProviderAsync(
     Cesium.TileMapServiceImageryProvider.fromUrl(
-      Cesium.buildModuleUrl("/Build/CesiumUnminified/Assets/Textures/NaturalEarthII")
+      Cesium.buildModuleUrl("/Build/Cesium/Assets/Textures/NaturalEarthII")
     )
   ),
   baseLayerPicker: false,
