@@ -5,6 +5,7 @@ fetch("../CesiumCzml.txt")
   .then((data) => {
     _target = JSON.parse(data);
     viewer.dataSources.add(Cesium.CzmlDataSource.load(_target))
+    a =new Cesium.CzmlDataSource()
   })
   .catch((error) => {
     console.error("エラー:", error);
