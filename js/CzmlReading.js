@@ -1,11 +1,17 @@
-var _target = "";
+var target = "";
+const czmlPath="../CesiumCzml.txt"
+const dataSource =  new Cesium.CzmlDataSource();
+let a;
 
-fetch("../CesiumCzml.txt")
+fetch(czmlPath)
   .then((response) => response.text())
   .then((data) => {
-    _target = JSON.parse(data);
-    viewer.dataSources.add(Cesium.CzmlDataSource.load(_target))
-    a =new Cesium.CzmlDataSource()
+
+    target = JSON.parse(data);
+    viewer.dataSources.add(dataSource.load(target))
+    a =dataSource.getById("document")
+    console.log(a)
+    //viewer.dataSources.add(Cesium.CzmlDataSource.load(target))
   })
   .catch((error) => {
     console.error("エラー:", error);

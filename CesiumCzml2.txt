@@ -17,16 +17,6 @@
     "description":"List of Accesses"
   },
   {
-    "id": "Tokyo",
-    "position": {
-      "cartographicDegrees": [135, 35, 10000]
-    },
-    "point": {
-      "color": "Cesium.Color.RED",
-      "pixelSize": "8"
-    }
-  },
-  {
     "id":"Satellite/Geoeye1-to-Satellite/ISS",
     "name":"Geoeye1 to ISS",
     "parent":"9927edc4-e87a-4e1f-9b8b-0bfb3b05b227",
