@@ -27,6 +27,9 @@ let vehicleEntity;
 const dataSource = new Cesium.CzmlDataSource();
 viewer.dataSources.add(dataSource);
 
+//viewer.dataSources.add(Cesium.GeoJsonDataSource.load('../cities.topojson', {}));
+
+
 processPart();
 
 viewer.clock.onTick.addEventListener(function (clock) {
