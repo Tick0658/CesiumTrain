@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="./Build/Cesium/Cesium.js"></script>
+    <link rel="stylesheet" href="./Build/Cesium/Widgets/widgets.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      #cesiumContainer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      html {
+        height: 100%;
+      }
+      body {
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        height: 100%;
+      }
+    </style>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="cesiumContainer"></div>
+    <script>
+      var viewer = new Cesium.Viewer("cesiumContainer", {
+        imageryProvider: new Cesium.UrlTemplateImageryProvider({
+          url: "./Build/Cesium/Assets/Textures/map2/{z}/{x}/{y}.png",
+        
+        }),
+        
+
+        baseLayerPicker: false,
+        geocoder: false,
+        homeButton: false,
+      });
+
+      viewer.camera.setView({
+        destination: Cesium.Cartesian3.fromDegrees(140.0, 36.14, 20000000.0),
+      });
+    </script>
+  </body>
+</html>
