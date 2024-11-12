@@ -2,3 +2,6 @@ https://github.com/cgohlke/geospatial-wheels/releases
 
 https://www.naturalearthdata.com/downloads/10m-raster-data/10m-natural-earth-2/
 
+https://qiita.com/Shogo_Hirasawa/items/f1fc8ad77d0722413ba7
+
+https://qiita.com/ozo360/items/f78c95795827d7732dff
